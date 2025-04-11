@@ -5,10 +5,20 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="title" content="Date Calculator - Calculate the past easy!">
+  <meta name="description" content="An easy Calculator for your important days and Time!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Date Calculator, date, calculate, time Calculator">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Shadowdara">
+  <meta property="og:title" content="Date Calculator - Calculate the past easy!">
+  <meta property="og:description" content="An easy Calculator for your important days and Time!">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
   <link rel="icon" href="" type="ico">
   <link rel="stylesheet" href="src/style_blue.css">
-  <title>Date Calculator</title>
+  <title>Date Calculator - Calculate the past easy!</title>
 </head>
 
 <body>
@@ -20,24 +30,32 @@
   </header>
 
   <main>
-    <h2>Calculate Dates</h2>
+    <h2>Date Calculator - Calculate the past easy!</h2>
     
     <div class="date-container" id="dateFields"></div>
 
-    <button onclick="addDateField()">new Date</button>
+    <button onclick="addDateField()">new date</button>
     <button onclick="calculateAllTimes()">calculate</button>
     <button onclick="resetDates()">reset</button>
 
     <div id="results"></div>
 
-    <!-- <p><a href="">Home</a></p> -->
+    <button onclick="document.getElementById('importFile').click()">import</button>
+
+    <input type="file" id="importFile" style="display: none;">
+
+    <button onclick="exportSavedDates()">export</button>
+
+    <div id="load_button"></div>
+
   </main>
 
   <footer>
-    <p>Made with ❤️ and Github Pages</p>
+    <p>Made with ❤️ by Shadowdara</p>
   </footer>
 
   <script src="src/calculate.js"></script>
+  <script src="src/file_save.js"></script>
 
 </body>
 
