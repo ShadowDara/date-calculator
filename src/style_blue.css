@@ -46,14 +46,6 @@ header p, footer p {
     margin: 0 5% auto;
 }
 
-nav {
-    margin-left: 30%;
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-}
-
 h2 {
     margin-bottom: 20px;
     font-size: 24px;

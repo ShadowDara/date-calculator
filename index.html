@@ -30,8 +30,8 @@
   </header>
 
   <main>
-    <h2>Date Calculator - Calculate the past easy!</h2>
-    
+    <h2>Date Calculator</h2>
+
     <div class="date-container" id="dateFields"></div>
 
     <button onclick="addDateField()">new date</button>
@@ -47,6 +47,18 @@
     <button onclick="exportSavedDates()">export</button>
 
     <div id="load_button"></div>
+
+    <script>
+      function on_press_load() {
+
+        document.getElementById('load_button').innerHTML = ''
+
+        importSavedDates(event)
+
+        loadSavedDates();
+        calculateAllTimes();
+      }
+    </script>
 
   </main>
 
