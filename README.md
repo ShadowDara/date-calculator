@@ -8,7 +8,7 @@
 
 Type  in your Date and see how much is gone since then!
  
-## Version
+## Versions
 
 ## Contributing
 
