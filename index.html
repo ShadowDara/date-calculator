@@ -24,9 +24,8 @@
 <body>
 
   <header>
-    <p><a>Infos</a></p>
+    <p><a href="https://github.com/weuritz8u/date-calculator?tab=readme-ov-file#date-calculator">Infos</a></p>
     <p><a href="https://github.com/weuritz8u/date-calculator?tab=security-ov-file">Security</a></p>
-    <p><a>Versions</a></p>
     <p><a href="https://github.com/weuritz8u/date-calculator">Source</a></p>
   </header>
 
@@ -51,14 +50,15 @@
 
     <script>
       function on_press_load() {
-
-        document.getElementById('load_button').innerHTML = ''
-
-        importSavedDates(event)
-
+        document.getElementById('load_button').innerHTML = '';
+        importSavedDates(event);
         loadSavedDates();
         calculateAllTimes();
       }
+    
+      document.getElementById('importFile').addEventListener("change", function (event) {
+        importSavedDates(event);
+      });
     </script>
 
   </main>
