@@ -1,7 +1,16 @@
-# Security
+# 🔒 Security
 
-This is a client side only website, so no data is selected,
+This is a **client-side only** web application, which means:
 
-If you see other risks of security,
+- No personal data is stored on a server.
+- All data is stored locally in your browser using `localStorage`.
+- File imports and exports happen only within your device.
 
-**Please report them!**
+We do **not** collect, track, or send any data externally.
+
+---
+
+If you find any security concerns or potential risks:
+
+➡️ **Please report them immediately!**  
+You can open an issue [here](https://github.com/weuritz8u/date-calculator/issues) or submit a pull request.
