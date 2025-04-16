@@ -2,7 +2,7 @@
 
 **A simple, web-based date calculator built with vanilla JavaScript.**  
 Enter important dates and calculate how much time has passed since.  
-Live Demo: 👉 [Try it here](https://weuritz8u.github.io/date-calculator)
+Live Demo: 👉 [Try it here](https://shadowdara.github.io/date-calculator)
 
 ---
 
