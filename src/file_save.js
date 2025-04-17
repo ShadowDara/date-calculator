@@ -1,7 +1,5 @@
 // script written by Shadowdara
 
-function reset() {}
-
 document.getElementById('importFile').addEventListener("change", function(event) {
     const file = event.target.files[0];
     if (file) {
