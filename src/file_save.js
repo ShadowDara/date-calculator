@@ -46,7 +46,13 @@ function exportSavedDates() {
         return;
     }
 
-    const blob = new Blob([savedDates], { type: "application/json" });
+    const parsedDates = JSON.parse(savedDates);
+
+    const currentSettings = {
+        "saved-dates": parsedDates
+    };
+
+    const blob = new Blob([JSON.stringify(currentSettings, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
     a.download = "savedDatesBackup.json";
