@@ -3,7 +3,7 @@
 document.getElementById('importFile').addEventListener("change", function(event) {
     const file = event.target.files[0];
     if (file) {
-        alert("Datei ausgewählt:", file.name);
+        alert("File choosed:", file.name);
 
         document.getElementById('load_button').innerHTML = '<button onclick="on_press_load(); loadSavedDates();">load dates</button>'
     }
@@ -19,7 +19,7 @@ function importSavedDates(event) {
             const jsonData = JSON.parse(e.target.result);
 
             if (localStorage.getItem("savedDates")) {
-                if (!confirm("Es gibt bereits gespeicherte Daten. Überschreiben?")) {
+                if (!confirm("There are already Saved Dates. Overwrite them?")) {
                     return;
                 }
             }
@@ -28,9 +28,9 @@ function importSavedDates(event) {
             document.getElementById("dateFields").innerHTML = "";
             jsonData.forEach(date => addDateField(date));
 
-            alert("'savedDates' wurden erfolgreich importiert!");
+            alert("'savedDates' are importet succesfully!");
         } catch (error) {
-            alert("Fehler: Die Datei enthält ungültige Daten!");
+            alert("Error: File contains invalid data!");
         }
     };
 
@@ -42,7 +42,7 @@ function importSavedDates(event) {
 function exportSavedDates() {
     const savedDates = localStorage.getItem("savedDates");
     if (!savedDates) {
-        alert("Keine gespeicherten Daten gefunden!");
+        alert("No saved data found!");
         return;
     }
 
